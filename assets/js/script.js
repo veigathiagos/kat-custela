@@ -1,7 +1,7 @@
 function entrar(){
    let resp = document.getElementById('resp')
 
-   if (resp.value == 'pic'){
+   if (resp.value == 'pic' || resp.value == 'Pic' || resp.value == 'PIC'){
       window.location.href = "carta.html";
       localStorage.setItem('senha', resp)
    } else {
