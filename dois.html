@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kat e Custela</title>
+   <link rel="shortcut icon" href="./assets/img/heart.png" type="image/png">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+
+   <script>
+      let resp = localStorage.getItem('senha')
+      if (resp == null) {
+         window.location.href = "index.html";
+         alert('Você precisa acertar o enigma antes de entrar!')
+      }
+
+      // window.addEventListener('beforeunload', () => {
+      //    localStorage.clear()
+      //    window.location.href = "index.html";
+      // })
+
+      // window.addEventListener('unload', () => {
+      //    localStorage.clear()
+      //    window.location.href = "index.html";
+      // })
+   </script>
+
+</head>
+
+<body id="body-um">
+
+
+   <div class="container mt-150">
+
+      <div class="row mb-5 d-flex justify-content-center">
+         <div class="col-md-6">
+            <h3 class="text-center text-white">O que fez cair lágrimas dos olhos de Deus em forma de chuva?</h3>
+         </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+         <div class="col-md-6 ">
+            <button data-toggle="modal" data-target="#errou" class="btn btn-success text-white shadow rounded w-100 font-weight-bold">Coronavirus</button>
+         </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+         <div class="col-md-6">
+            <button data-toggle="modal" data-target="#errou" class="btn btn-warning text-white shadow rounded w-100 font-weight-bold">Guerra no
+               Paquistão</button>
+         </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+         <div class="col-md-6">
+            <button data-toggle="modal" data-target="#acertou" class="btn btn-primary text-white shadow rounded w-100 font-weight-bold">Beijos no metrô</button>
+         </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+         <div class="col-md-6">
+            <button data-toggle="modal" data-target="#errou" class="btn btn-danger text-white shadow rounded w-100 font-weight-bold">Chute na quina da mesinha</button>
+         </div>
+      </div>
+
+
+   </div>
+   </div>
+
+
+ <!-- Modal errou -->
+ <div class="modal fade" id="errou" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered " role="document">
+     <div class="modal-content  bg-danger">
+       <div class="modal-body">
+         <img class="img-fluid w-100" src="./assets/img/errou.gif" alt="">
+         <div class="d-flex justify-content-center mt-3">
+            <button data-dismiss="modal" class="btn btn-danger">Tentar novamente</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- Modal acetou -->
+ <div class="modal fade " id="acertou" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content bg-success">
+       <div class="modal-body">
+         <img class="img-fluid" src="./assets/img/acerto.gif" alt="">
+         <div class="d-flex justify-content-center mt-3">
+            <a href="tres.html"  class="btn btn-success">Avançar >> </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+   <script src="./assets/js/script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

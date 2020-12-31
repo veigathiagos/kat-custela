@@ -1,23 +1,21 @@
 #body-index{
-   background-image: url('../img/nós-b&w-blur.jpeg');
-
-   background-repeat: no-repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-size: cover;
-   
+   background-color: #2A8BE4;
 }
 
-h3{
+#body-um{
+   background-color: #F24040;
+}
+
+#body-dois{
+   background-color: #FFC34D;
+}
+
+h3, h5, h4{
    text-shadow: black 0.1em 0.1em 0.2em
 }
 
-.mt-200{
-   margin-top: 200px;
-}
-
-#body-carta{
-   background-color: gray;
+.mt-150{
+   margin-top: 150px;
 }
 
 .numbers{
@@ -28,3 +26,5 @@ p{
    text-align: justify;
    font-size: 14pt;
 }
+
+

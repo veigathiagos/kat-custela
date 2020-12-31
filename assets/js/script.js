@@ -2,10 +2,9 @@ function entrar(){
    let resp = document.getElementById('resp')
 
    if (resp.value == 'pic' || resp.value == 'Pic' || resp.value == 'PIC'){
-      window.location.href = "carta.html";
-      localStorage.setItem('senha', resp)
+      $("#acertou").modal('toggle');
    } else {
-      alert('Resposta incorreta, tente novamente')
+      $("#errou").modal('toggle');
    }
 }
 
